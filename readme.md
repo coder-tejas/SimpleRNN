@@ -1,94 +1,107 @@
-🧠 SimpleRNN
-A minimalistic project showcasing how to build a Simple Recurrent Neural Network (RNN) using Keras for Sentiment Analysis on the IMDB dataset.
+# 🧠 SimpleRNN
 
-🚀 Project Setup (Local Installation)
-Follow these quick steps to get started locally:
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
+[![Python](https://img.shields.io/badge/python-3.7%2B-blue.svg)](https://www.python.org/)
 
-1. Clone the Repo
-bash
-Copy
-Edit
+A simple Recurrent Neural Network (RNN) built using **Keras** to perform **sentiment analysis** on the IMDB movie reviews dataset.
+
+---
+
+## 📦 Setup Locally
+
+Get started in minutes:
+
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/coder-tejas/SimpleRNN.git
 cd SimpleRNN
-2. (Optional) Create a Virtual Environment
-Highly recommended to avoid messing up your global Python setup:
+```
 
-bash
-Copy
-Edit
-# Create a virtual environment
+### 2. (Optional) Set up a virtual environment
+
+```bash
+# Create virtual environment
 python -m venv venv
 
-# Activate it
-# For Linux/MacOS
-source venv/bin/activate
-
-# For Windows
+# Activate
+# On Windows
 venv\Scripts\activate
-3. Install Required Packages
-bash
-Copy
-Edit
+
+# On Linux/Mac
+source venv/bin/activate
+```
+
+### 3. Install dependencies
+
+```bash
 pip install -r requirements.txt
-This will install packages like TensorFlow, Keras, and other essentials.
+```
 
-4. Run the Notebooks 📓
-Fire up Jupyter:
+### 4. Run the project
 
-bash
-Copy
-Edit
+Launch Jupyter Notebooks:
+
+```bash
 jupyter notebook
-Then open any of the following notebooks:
+```
 
-RNN.ipynb
+Open and run:
 
-embedding.ipynb
+- `RNN.ipynb`
+- `embedding.ipynb`
+- `simplernn.ipynb`
+- `prediction.ipynb`
 
-simplernn.ipynb
+Or run the standalone Python script:
 
-prediction.ipynb
-
-5. Alternatively, Run the Python Script 🖥️
-If you want to directly execute the main script:
-
-bash
-Copy
-Edit
+```bash
 python main.py
-Make sure simple_rnn_imdb.h5 (the saved model) is present if the script depends on a pre-trained model!
+```
 
-📂 Project Structure
-plaintext
-Copy
-Edit
+(⚡ Make sure `simple_rnn_imdb.h5` model file is present if you want to load a pretrained model.)
+
+---
+
+## 🛠️ Project Structure
+
+```bash
 SimpleRNN/
-├── RNN.ipynb            # Basic RNN explanation and setup
-├── embedding.ipynb      # Word embedding walkthrough
-├── simplernn.ipynb      # Building and training a SimpleRNN
-├── prediction.ipynb     # Prediction and evaluation
-├── main.py              # Python script for quick runs
-├── simple_rnn_imdb.h5   # Saved trained model
-├── requirements.txt     # Project dependencies
-└── README.md            # You are here!
-🧩 Tech Stack
-Python 3.x
+├── RNN.ipynb            # Introduction to RNNs
+├── embedding.ipynb      # Word embedding demo
+├── simplernn.ipynb      # Building/training SimpleRNN
+├── prediction.ipynb     # Predictions using the model
+├── main.py              # Script version
+├── simple_rnn_imdb.h5   # Pretrained model file
+├── requirements.txt     # List of dependencies
+└── README.md            # (This file!)
+```
 
-TensorFlow + Keras
+---
 
-NumPy
+## 🧰 Tech Stack
 
-Jupyter Notebook
+- Python 3.7+
+- TensorFlow & Keras
+- NumPy
+- Jupyter Notebook
 
-✨ Future Scope
-Add LSTM/GRU models for better handling of long-term dependencies
+---
 
-Implement attention mechanisms
+## 🚀 Future Improvements
 
-Fine-tune on custom datasets beyond IMDB
+- Add LSTM / GRU models for better performance
+- Explore attention mechanisms
+- Fine-tune with custom datasets
 
-🛡️ License
-This project is open-source and available under the MIT License.
+---
 
-📣 Shoutout
-Built with ❤️ by coder-tejas
+## 📝 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## ✨ Acknowledgments
+
+Built with ❤️ by [coder-tejas](https://github.com/coder-tejas)
